@@ -18,8 +18,7 @@ pip install -r requirements.txt
 
 Put your links into the searchUrls.txt file an example is given below.
 ```
-https://shop.tcgplayer.com/magic/beta-edition/lightning-bolt
-https://shop.tcgplayer.com/magic/beta-edition/blue-elemental-blast
+https://www.tcgplayer.com/product/502000/pokemon-sv-scarlet-and-violet-151-151-booster-bundle?Language=English
 ```
 
 then just run main.py
