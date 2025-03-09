@@ -1,10 +1,10 @@
 from selenium import webdriver
 import xlsxwriter
 import io
-import requests
 import time
 import shutil
 import os
+from security import safe_requests
 
 driver = webdriver.Chrome()
 
@@ -62,7 +62,7 @@ def scrapeURL(url):
             listingUrl = driver.find_elements_by_xpath("//section[@class='product-listings']/div/a")[loops].get_attribute("href")
             price = driver.find_elements_by_xpath("//section[@class='product-listings']/div/div[@class='product-listing__pricing']/span[@class='product-listing__price']")[loops].text.strip()
 
-            r = requests.get(photoUrl)
+            r = safe_requests.get(photoUrl)
 
             
 
